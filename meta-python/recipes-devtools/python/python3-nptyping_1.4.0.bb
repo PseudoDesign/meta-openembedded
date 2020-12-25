@@ -1,2 +1,2 @@
-inherit pypi setuptools3
+inherit setuptools3
 require python-nptyping_1.4.0.inc

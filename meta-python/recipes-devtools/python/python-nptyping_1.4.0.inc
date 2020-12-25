@@ -1,15 +1,16 @@
 SUMMARY = "Type Hints for Numpy"
 DESCRIPTION = "Type Hints for Numpy"
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://recipe-sysroot/usr/lib/python3.7/LICENSE.txt;md5=39268f1dcbd69f9ef7db699f62f312c2"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=39268f1dcbd69f9ef7db699f62f312c2"
 
-SRC_URI[md5sum] = "06292d764a50cfe43bf3f868bdee0da1"
-SRC_URI[sha256sum] = "dada081b24cd922bbfb0a862e72104d811699fd9f8c9b7bea464fb933dc491a3"
+PYPI_SRC_URI = "https://github.com/ramonhagenaars/nptyping/archive/v1.4.0.tar.gz"
 
-PYPI_PACKAGE = "nptyping"
-PYPI_PACKAGE_EXT = "whl"
+SRC_URI[md5sum] = "eed30ee00c92daaebc10e4cec9c56c49"
+SRC_URI[sha256sum] = "c20cc20e31fdb4bfade0f129fc144eb01f70ec08d788c8aef21c99643bcc92fd"
 
 RDEPENDS_${PN} += " \
     ${PYTHON_PN}-numpy \
     ${PYTHON_PN}-typish \
 "
+
+inherit pypi
